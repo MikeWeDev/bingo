@@ -26,13 +26,13 @@ export const Card2 = ({ isOpen2, setIsOpen2 }) => {
   return (
     <>
       <div
-        className={`bg-red-500 ${values}  border-b-[2px] border-black absolute top-[130%] left-[30%] w-[40%]  flex justify-center items-center`}
+        className={`bg-red-500 ${values}  border-b-[2px] p-4 border-black absolute top-[120%] left-[35%] w-[35%]  flex justify-center items-center`}
       >
-        <div className="w-[500px] h-[450px]  flex flex-col items-center gap-4">
+        <div className="w-[400px] h-[350px]  flex flex-col items-center gap-4">
           <div className="flex relative text-white text-2xl font-bold ">
             CREATE A CARD
             <span
-              className="mt-1 absolute right-[-80%] text-3xl  cursor-pointer text-center"
+              className="mt-1 absolute right-[-50%] text-3xl  cursor-pointer text-center"
               onClick={() => setIsOpen2(false)}
             >
               <FaDeleteLeft />
@@ -48,7 +48,7 @@ export const Card2 = ({ isOpen2, setIsOpen2 }) => {
                       key={`${column}-${index}`}
                       type="number"
                       value={cardValues[column][index]}
-                      className="w-[100%]  border border-[2px] text-center text-xl font-bold font-saarif  h-[50px]"
+                      className="w-[100%]  border border-[2px] text-center text-xl font-bold font-saarif  h-[35px]"
                       onChange={(e) =>
                         handleInputChange(column, index, Number(e.target.value))
                       }
@@ -58,7 +58,7 @@ export const Card2 = ({ isOpen2, setIsOpen2 }) => {
               );
             })}
           </div>
-          <button className="bg-green-400 w-1/2  p-3 font-bold rounded-lg">
+          <button className="bg-white text-red-500 w-1/2  p-3 font-bold rounded-lg">
             Add card
           </button>
         </div>
