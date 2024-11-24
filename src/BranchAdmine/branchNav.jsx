@@ -16,7 +16,7 @@ function Nav2({isOpen2,setIsOpen2}){
 
     return(
         <>
-            <div className={`h-[100vh] ${blur} w-[19vw] bg-[#104F55]  text-white flex   border border-[2px] gap-5 flex-col justify-start p-7 items-center`}>
+            <div className={`h-[80vh] ${blur} w-[19vw] bg-[#104F55]  text-white flex   border border-[2px] gap-5 flex-col justify-start p-7 items-center`}>
             <h1 className="text-green-400 text-3xl  font-bold mb-8">BINGO</h1>
           
             <div className="flex gap-2 w-full items-center">

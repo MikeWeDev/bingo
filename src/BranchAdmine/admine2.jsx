@@ -48,7 +48,7 @@ function Admine2({ isOpen2,setIsOpen2 }) {
   }, []);
 
   return (
-    <div className="flex mt-[10%]">
+    <div className="flex mt-[5%] bt-red-500">
      <Nav2  isOpen2={isOpen2} setIsOpen2={setIsOpen2}/>
       <div
         className={`h-[100vh] ${blur}  w-[81vw] gap-4 flex flex-col justify-around bg-white p-5 `}
